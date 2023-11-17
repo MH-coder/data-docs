@@ -5,6 +5,14 @@ import Link from "next/link"
 import { useEffect } from "react";
 import { useState } from "react";
 import ModalPopup from "../layout/ModalPopup";
+import { FcCheckmark } from "react-icons/fc";
+import { CgClose } from "react-icons/cg";
+import { GoIssueClosed } from "react-icons/go";
+import { SlClose } from "react-icons/sl";
+import { IoCloseCircle } from "react-icons/io5";
+import { FaCircleCheck, FaCircleXmark } from "react-icons/fa6";
+
+
 export default function Price3() {
     const [activeIndex2, setActiveIndex2] = useState(1);
     const [packages, setPackages] = useState([]);
@@ -24,7 +32,7 @@ export default function Price3() {
         console.log("packages: ", res);
 
         if (!res?.data?.success) {
-            errorAlert(res?.data?.message)
+            // errorAlert(res?.data?.message)
         } else {
             const suggestions = ["Recommended", "Most Recommended", "Popular"]
             setPackages(res?.data?.data.map((pricePackage, index) => {
@@ -45,7 +53,7 @@ export default function Price3() {
                 {/*===============spacing==============*/}
                 <div className="pd_top_80" />
                 {/*===============spacing==============*/}
-                <div className="container">
+                <div className="padding_dd">
                     <div className="row align-items-end">
                         <div className="col-lg-6 col-md-12">
                             <div className="title_all_box style_six dark_color">
@@ -63,7 +71,7 @@ export default function Price3() {
                     {/*===============spacing==============*/}
                     <div className="pd_bottom_20" />
                     {/*===============spacing==============*/}
-                    <section className="price_plan_with_tab price_tb_style_two">
+                    {/* <section className="price_plan_with_tab price_tb_style_two">
                         <div className="row">
                             <div className="col-lg-12 ml-auto">
                                 <div className="tab_pricing_list">
@@ -80,42 +88,46 @@ export default function Price3() {
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </section> */}
                     <div className="row">
                         {
                             packages?.map((_package) => {
                                 return <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                     <div className="pricing_plan_box type_one">
                                         <div className="tags">{_package?.suggestion}</div>
-                                        <div className="pricing_plan_box_inner">
+                                        <div className="pricing_plan_box_inner package_shadow_dd">
                                             <div className="upper_content">
                                                 <div className="title_s">
                                                     <h2>{_package?.name}</h2>
                                                 </div>
                                                 <div className="price_rs">
-                                                    <h6><small>{_package?.price} AED</small> / <span>Year</span></h6>
+                                                    <h6><small>{_package?.price} AED</small></h6>
                                                 </div>
                                                 <p>Power of choice is untrammelled and do what we like best.</p>
                                             </div>
                                             <div className="lower_content">
                                                 <ul>
                                                     {
-                                                        _package?.services?.map((service) => {
-                                                            return <li>
+                                                        _package?.services?.map((service, index) => {
+                                                            return <li key={index} className={"price_list_item_dd"} >
                                                                 {
                                                                     service?.available ?
-                                                                        <span className="yes_ico fa fa-check-circle-o text-success" /> :
-                                                                        <span className="no_ico fa fa-times-circle-o text-secondary" />
+                                                                        <span className=""><FaCircleCheck size={20} color="#388e3c
+
+" /></span> :
+                                                                        <span className="text-danger" style={{ fontWeight: 800 }}>
+                                                                            <FaCircleXmark size={20} color="#d32f2f" />
+                                                                        </span>
 
                                                                 }
-                                                                <p className={`${!service?.available && ""} mb-0`}>{service?.name}</p></li>
+                                                                <p className={`mb-0`} style={{ fontSize: "14px", fontWeight: service?.available && 700, marginLeft: "7px" }}>{service?.name}</p></li>
 
                                                         })
                                                     }
 
                                                 </ul>
                                             </div>
-                                            <div className="get_start_button theme_btn_all">
+                                            <div className="get_start_button theme_btn_all mx-4">
                                                 <button className="theme-btn one" onClick={() => setContactPopup(true)}>Get
                                                     Started<span className="icon-arrow-right" /></button>
                                             </div>

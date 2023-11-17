@@ -1,6 +1,10 @@
 import Link from "next/link"
 import VideoBox from "../elements/VideoBox"
+import { useTranslations } from 'next-intl';
+
 export default function Process2() {
+    const t = useTranslations();
+
     return (
         <>
             <section className="process-section">
@@ -12,10 +16,10 @@ export default function Process2() {
                         <div className="col-lg-12">
                             <div className="title_all_box style_three text-center dark_color">
                                 <div className="title_sections three">
-                                    <div className="before_title">COMPLETE SERVICE WITH MAXIMUM CONFIDENTIALITY</div>
-                                    <h2>Advantages of opening a company in Dubai</h2>
+                                    {/* <div className="before_title">COMPLETE SERVICE WITH MAXIMUM CONFIDENTIALITY</div> */}
+                                    <h2>{t("The advantages of opening your company in Dubai")}</h2>
                                     <p>
-                                        Setting up a company in the United Arab Emirates offers numerous advantages that Italian entrepreneurs could not even imagine.
+                                        {t("Setting up a company in the UAE offers huge benefits to entrepreneurs")}
                                     </p>
                                 </div>
                                 {/*===============spacing==============*/}
@@ -30,12 +34,12 @@ export default function Process2() {
                                 <div className="process_box_outer_three left">
                                     <div className="icon">
                                         <div className="img">
-                                            <img src="/assets/images/projects/img-1.png" className="img-fluid svg_image" alt="icon png" />
+                                            <img src="/assets/images/pngs/tax.png" className="img-fluid svg_image" alt="icon png" />
                                         </div>
                                     </div>
                                     <div className="content_box">
-                                        <h2><Link href="#" >0% Tax</Link ></h2>
-                                        <p>In 95% of cases our clients are exempt from income, capital gains, company profits and sales taxes.</p>
+                                        <h2><Link href="#" >{t("0% Tax")}</Link></h2>
+                                        <p>{t("The best solution to be exempt from income, capital gains, corporate profits and sales taxes")}</p>
                                     </div>
                                     {/* <div className="number">
                                         <h6>01</h6>
@@ -53,14 +57,14 @@ export default function Process2() {
                                 <div className="process_box_outer_three left">
                                     <div className="icon">
                                         <div className="img">
-                                            <img src="/assets/images/projects/img-2.png" className="img-fluid svg_image" alt="icon png" />
+                                            <img src="/assets/images/pngs/docs-2.png" className="img-fluid svg_image" alt="icon png" />
                                         </div>
                                     </div>
                                     <div className="content_box">
                                         <h2> <Link href="#" >
-                                            Almost non-existent bureaucracy </Link>
+                                            {t("Virtually non-existent bureaucracy")} </Link>
                                         </h2>
-                                        <p>The bureaucratic commitment for a company in Dubai is extremely reduced compared to European countries.</p>
+                                        <p>{t("The bureaucratic commitment to manage a company in Dubai is very low and fully assisted by our consultants")}</p>
                                     </div>
                                     {/* <div className="number">
                                         <h6> 02</h6>
@@ -81,12 +85,12 @@ export default function Process2() {
                                 <div className="process_box_outer_three right">
                                     <div className="icon">
                                         <div className="img">
-                                            <img src="/assets/images/projects/img-3.png" className="img-fluid svg_image" alt="icon png" />
+                                            <img src="/assets/images/pngs/privacy.png" className="img-fluid svg_image" alt="icon png" />
                                         </div>
                                     </div>
                                     <div className="content_box">
-                                        <h2><Link href="#" >100% Anonymous</Link ></h2>
-                                        <p>In Dubai and the United Arab Emirates there are no publicly available company registers and documents.</p>
+                                        <h2><Link href="#" >{t("100% anonymity")}</Link></h2>
+                                        <p>{t("In Dubai there is no obligation to publish company documents or registers")}</p>
                                     </div>
                                     {/* <div className="number">
                                         <h6>03</h6>
@@ -104,12 +108,12 @@ export default function Process2() {
                                 <div className="process_box_outer_three right">
                                     <div className="icon">
                                         <div className="img">
-                                            <img src="/assets/images/projects/img-4.png" className="img-fluid svg_image" alt="icon png" />
+                                            <img src="/assets/images/pngs/residance.png" className="img-fluid svg_image" alt="icon png" />
                                         </div>
                                     </div>
                                     <div className="content_box">
-                                        <h2><Link href="#" >No residency requirement</Link></h2>
-                                        <p>As a company owner, to keep your visa active you simply need to enter the country every 6 months for at least 24 hours.</p>
+                                        <h2><Link href="#" >{t("No residency requirement")}</Link></h2>
+                                        <p>{t("The physical presence of the business owner is not required It is sufficient to enter Dubai once every 6 months for a duration of at least 24 hours")}</p>
                                     </div>
                                     {/* <div className="number">
                                         <h6>04</h6>

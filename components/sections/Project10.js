@@ -7,32 +7,32 @@ const companyFormationSteps = [
     {
         stepTitle: "1. Consulting",
         description: "During the free consultation we will discover with you which type of company is best suited to your personal needs and your business. You will then receive a non-binding offer from us, including a program tailored to your needs to set up your company and organize your 5-day stay in Dubai to obtain your visa.",
-        backgroundImage: "/assets/images/projects/img-3.png"
+        backgroundImage: "/assets/images/pngs/consulting.png"
     },
     {
         stepTitle: "2. Preparation of documents",
         description: "Once we have jointly decided to proceed, we will send you a document containing all the information and documents we need to begin the process of setting up your company in Dubai. We will take care of all the paperwork and communication with the local bodies.",
-        backgroundImage: "/assets/images/projects/img-2.png"
+        backgroundImage: "/assets/images/pngs/docs-1.png"
     },
     {
         stepTitle: "3. Company Incorporation",
         description: "As soon as we have received all the necessary information and documents, we will open your company in Dubai, perfectly suited to you and your business activities. Company formation in Dubai takes approximately 5 working days. We will then send you all the company documents and prepare the visa process.",
-        backgroundImage: "/assets/images/projects/img-1.png"
+        backgroundImage: "/assets/images/pngs/incorporation.png"
     },
     {
         stepTitle: "4. Visa application",
         description: "To open a private and/or corporate account in Dubai, a United Arab Emirates resident visa is required. We will apply for you after the company is formed. Once received you will need to travel to Dubai for 3-5 working days to complete the process of issuing your Visa and Emirates ID.",
-        backgroundImage: "/assets/images/projects/img-4.png"
+        backgroundImage: "/assets/images/pngs/digital-banking.png"
     },
     {
         stepTitle: "5. Stay in Dubai",
         description: "After issuance of provisional visa, you will spend 3-5 working days in Dubai for medical checks and then present yourself to the local authorities for the registration of biometric fingerprints. We will prepare all the necessary documents for these appointments and support you so that you can receive your visa and Emirates ID.",
-        backgroundImage: "/assets/images/projects/img-5.png"
+        backgroundImage: "/assets/images/pngs/stay.png"
     },
     {
         stepTitle: "6. Account opening",
         description: "After receiving your visa and Emirates ID, we will immediately apply to open your business bank account so that you can operate your company in Dubai as quickly as possible. If necessary, we will also take care of opening a private account for all members and directors of your company.",
-        backgroundImage: "/assets/images/projects/img-6.png"
+        backgroundImage: "/assets/images/pngs/banking.png"
     }
 ]
 
@@ -139,7 +139,7 @@ export default function Project10() {
                                         <div className="content_box">
                                             <div className="icon_box clearfix">
                                                 <div className="icon_box_inner">
-                                                    <i className="icon icon-thumbs-up icon" />
+                                                    {/* <i className="icon icon-thumbs-up icon" /> */}
                                                 </div>
                                             </div>
                                             <h2 className="entry-title">

@@ -148,7 +148,7 @@ export default function ModalPopup({ isContactPopup, handleContactPopup }) {
                 }
             }))
         } else {
-            alert(res?.data?.message)
+            // alert(res?.data?.message)
         }
     }
 
@@ -167,7 +167,7 @@ export default function ModalPopup({ isContactPopup, handleContactPopup }) {
                 }
             }))
         } else {
-            alert(countries?.data?.message)
+            // alert(countries?.data?.message)
         }
     }
 
@@ -186,7 +186,7 @@ export default function ModalPopup({ isContactPopup, handleContactPopup }) {
                 }
             }))
         } else {
-            alert(languages?.data?.message)
+            // alert(languages?.data?.message)
         }
     }
 

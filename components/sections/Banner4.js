@@ -1,9 +1,10 @@
 // import { urlFor } from "@/sanity";
 import VideoBox from "../elements/VideoBox";
 import { useEffect, useState } from "react";
+import { useTranslations } from 'next-intl';
 
 const list_points = [
-    "Establishment of the company in just 5 days", "Secured corporate account", "360° carefree service", "Zero taxes on foreign transactions", "Over 450 companies established"
+    "Company incorporation in 3 days", "0% Foreign Transaction Tax", "Team of professionals in different languages", "+ than 200 companies started", "Company account opening guarantee", "No share capital to be paid to open a company"
 ]
 
 export default function Banner4() {
@@ -23,10 +24,12 @@ export default function Banner4() {
         window.addEventListener("resize", handleResize, false)
     }, [])
 
+    const t = useTranslations();
+
     return (
         <>
             <div className="banner_section_hm_16 pd_left_100 pd_right_100 md_pd_left_15 md_pd_right_15">
-                <div className="inner_section bg_op_1" style={{ background: 'url(/assets/images/business-background-3.jpg)', backgroundPosition: "top", objectFit: "contain", position: "relative" }}>
+                <div className="inner_section bg_op_1" style={{ background: 'url(/assets/images/business-background-8.jpg)', backgroundPosition: "center 25%", position: "relative", }}>
                     <div className="mainHeaderGradient" style={{ position: 'absolute', width: "100%", height: "100%", borderRadius: "30px", }}></div>
                     <div className="default-container">
                         <div className="row gutter_30px">
@@ -37,8 +40,8 @@ export default function Banner4() {
 
                                             <div className="banner_intro_dd">
                                                 <div className="title title_dd">
-                                                    <h6>Set up your</h6>
-                                                    <h1 className="">Company in Dubai</h1>
+                                                    <h1 style={{ marginBottom: "0px" }}>{t("Create your company in Dubai now")}</h1>
+                                                    <h5 style={{ color: "white", marginBottom: "30px" }}>{t("Simple, Fast, with professionals at your service")}</h5>
                                                 </div>
 
                                                 {/* LIST ITEMS */}
@@ -47,7 +50,7 @@ export default function Banner4() {
                                                         list_points.map((point, index) => {
                                                             return <div key={index} className="list_item_dd">
                                                                 <i className=" icon-checked" />
-                                                                <p>{point}</p>
+                                                                <p>{t(point)}</p>
                                                             </div>
                                                         })
                                                     }

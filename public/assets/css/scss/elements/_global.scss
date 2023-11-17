@@ -79,6 +79,28 @@
   }
 }
 
+// HEADER
+.header_socails_dd {
+  display: flex;
+  align-items: center;
+
+  .social_dd {
+    padding: 5px;
+    border: none;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      // color: #5e2264 !important;
+      background: #5e2264;
+    }
+  }
+}
+
 // ABOUT
 .bullets_container {
   gap: 10px 0px;

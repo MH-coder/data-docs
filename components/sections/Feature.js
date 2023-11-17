@@ -53,7 +53,7 @@ export default function Feature() {
                             <div className="icon_box_new_box type_two ">
                                 <span className="borders" />
                                 <div className="icon_box">
-                                    <img src="/assets/images/projects/img-1.png" className="img-fluid svg_image" alt="icon png" />
+                                    <img src="/assets/images/pngs/inovation.png" className="img-fluid svg_image" alt="icon png" />
                                     {/* <span className="icon_bg_rotate" /> */}
                                 </div>
                                 <div className="content">
@@ -71,7 +71,7 @@ export default function Feature() {
                             <div className="icon_box_new_box type_two ">
                                 <span className="borders" />
                                 <div className="icon_box">
-                                    <img src="/assets/images/projects/img-2.png" className="img-fluid svg_image" alt="icon png" />
+                                    <img src="/assets/images/pngs/safety.png" className="img-fluid svg_image" alt="icon png" />
                                     {/* <span className="icon_bg_rotate" /> */}
                                 </div>
                                 <div className="content">
@@ -89,7 +89,7 @@ export default function Feature() {
                             <div className="icon_box_new_box type_two ">
                                 <span className="borders" />
                                 <div className="icon_box">
-                                    <img src="/assets/images/projects/img-3.png" className="img-fluid svg_image" alt="icon png" />
+                                    <img src="/assets/images/pngs/connection.png" className="img-fluid svg_image" alt="icon png" />
                                     {/* <span className="icon_bg_rotate" /> */}
                                 </div>
                                 <div className="content">

@@ -1,6 +1,6 @@
 import Layout from "@/components/layout/Layout"
 import Banner4 from "@/components/sections/Banner4"
-
+// import {GetStaticPropsContext} from 'next';
 // import { sanityClient } from "@/sanity";
 
 // GROQ QUERIES
@@ -33,6 +33,14 @@ export default function Home() {
             </Layout>
         </>
     )
+}
+
+export async function getStaticProps({ locale }) {
+    return {
+        props: {
+            messages: (await import(`../messages/${locale}.json`)).default
+        }
+    };
 }
 
 //  --  NEXTJS, will deploy this function while build

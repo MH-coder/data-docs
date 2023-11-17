@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Navbar from "../Navbar"
+
 export default function Header16({ handleContactPopup, handleMobileMenu }) {
     return (
         <>
@@ -17,7 +18,7 @@ export default function Header16({ handleContactPopup, handleMobileMenu }) {
                                     </ul>
                                 </div>
                                 <div className="top_right text-right">
-                                    <ul className="contact_info_two">
+                                    {/* <ul className="contact_info_two">
                                         <li className="single">
                                             <p> <span className="icon-telephone" style={{ color: "white" }} /> <Link href="tel:+98 060 712 34">+98
                                                 060 712
@@ -32,7 +33,39 @@ export default function Header16({ handleContactPopup, handleMobileMenu }) {
                                             <p> <span className="icon-location2" style={{ color: "white" }} />
                                                 61W Business Str Hobert, LA </p>
                                         </li>
-                                    </ul>
+                                    </ul> */}
+                                    <div className="row">
+                                        <div className="col-lg-4 col-md-12 text-md-end">
+                                            <div className="header_socails_dd">
+                                                <Link href="#"> <span className="fa fa-facebook social_dd text-white" />
+                                                    {/* <small>facebook</small> */}
+                                                </Link>
+
+                                                <Link href="#"> <span className="fa fa-twitter social_dd text-white" />
+                                                    {/* <small>twitter</small> */}
+                                                </Link>
+
+                                                <Link href="#"> <span className="fa fa-skype social_dd text-white" />
+                                                    {/* <small>skype</small> */}
+                                                </Link>
+
+                                                <Link href="#"> <span className="fa fa-instagram social_dd text-white" />
+                                                    {/* <small>instagram</small> */}
+                                                </Link>
+
+                                                <Link href="#"> <span className="fa fa-youtube social_dd text-white" />
+                                                    {/* <small>youtube</small> */}
+                                                </Link>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {/* <Link href="/about-us" locale="es">Spanish</Link>
+                                    <Link href="/" locale="it">Italian</Link>
+                                    <Link href="/" locale="en">English</Link> */}
+
+                                    {/* <Link href={"/en"} locale="en">English</Link> */}
+
                                 </div>
                             </div>
                         </div>

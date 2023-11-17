@@ -1559,7 +1559,7 @@
   }
 
   &.type_two {
-    min-height: 430px;
+    min-height: 470px;
     position: relative;
     padding: 60px 40px 0px 40px;
     background: var(--color-white);
@@ -1577,13 +1577,14 @@
       line-height: 110px;
       // border: 1px solid var(--border-color-dark);
       width: 300px;
-      height: 170px;
+      height: 200px;
       // border-radius: 50%;
       left: 0px;
       right: 0;
       top: -10px;
       display: block;
-      margin: 0 auto 15px;
+      // margin: 0  15px;
+      margin-bottom: 40px;
       padding: 12px;
       // -webkit-transition: all 0.6s ease-in-out;
       // -moz-transition: all 0.6s ease-in-out;
@@ -1634,6 +1635,7 @@
     .content {
       position: relative;
       z-index: 10;
+      margin-bottom: 10px;
 
       h2 a {
         font-size: 20px;
@@ -2362,7 +2364,13 @@
 }
 
 /*-----pricing_plan_box type_one-------*/
-
+.padding_dd {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.package_shadow_dd {
+  box-shadow: 0px 0px 8px #5e2264b3;
+}
 .pricing_plan_box {
   position: relative;
 
@@ -2400,29 +2408,29 @@
     .pricing_plan_box_inner {
       position: relative;
       overflow: hidden;
-      padding: 50px 30px 40px;
+      padding: 50px 0px 40px;
       background: var(--color-white);
       margin-bottom: 30px;
       margin-top: 30px;
       border-radius: 6px;
-      box-shadow: 0px 5px 32px 0px rgba(0, 0, 0, 0.05);
+      // box-shadow: 0px 5px 32px 0px rgba(0, 0, 0, 0.05);
 
-      &:before {
-        position: absolute;
-        width: 0%;
-        height: 100%;
-        right: -30px;
-        content: "";
-        top: 0;
-        background: var(--heading-dark);
-        opacity: 1;
-        transition: all 0.6s ease;
-        -moz-transition: all 0.6s ease;
-        -webkit-transition: all 0.6s ease;
-        -ms-transition: all 0.6s ease;
-        -o-transition: all 0.6s ease;
-        border-radius: 6px;
-      }
+      // &:before {
+      //   position: absolute;
+      //   width: 0%;
+      //   height: 100%;
+      //   right: -30px;
+      //   content: "";
+      //   top: 0;
+      //   background: var(--heading-dark);
+      //   opacity: 1;
+      //   transition: all 0.6s ease;
+      //   -moz-transition: all 0.6s ease;
+      //   -webkit-transition: all 0.6s ease;
+      //   -ms-transition: all 0.6s ease;
+      //   -o-transition: all 0.6s ease;
+      //   border-radius: 6px;
+      // }
 
       h2 {
         display: block;
@@ -2455,14 +2463,16 @@
       .upper_content {
         position: relative;
         text-align: center;
-        margin-bottom: 18px;
+        // margin-bottom: 18px;
         padding-bottom: 12px;
-        border-bottom: 1px dashed rgba(34, 34, 34, 0.1);
+        border-bottom: 1px dashed rgba(94, 34, 100, 0.3);
         transition: all 0.6s ease;
         -moz-transition: all 0.6s ease;
         -webkit-transition: all 0.6s ease;
         -ms-transition: all 0.6s ease;
         -o-transition: all 0.6s ease;
+        padding-left: 12px;
+        padding-right: 12px;
       }
 
       .lower_content {
@@ -2475,18 +2485,42 @@
         -o-transition: all 0.6s ease;
 
         ul {
-          padding-left: 0px;
           margin-bottom: 0px;
+          padding-left: 0px;
+          // max-height: 400px;
+          // overflow-y: scroll;
+
+          &::-webkit-scrollbar {
+            width: 4px;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background-color: #919191; /* Color of the scrollbar handle */
+            border-radius: 5px; /* Rounded corners */
+          }
+
+          .price_list_item_dd {
+            // background-color: rgb(205, 205, 205);
+            // color: #000;
+            // border-bottom: 1px solid gray;
+            border-bottom: 1px dashed rgba(94, 34, 100, 0.3);
+            padding-left: 20px;
+            padding-right: 10px;
+          }
 
           li {
             position: relative;
-            margin-bottom: 10px;
+            // margin-bottom: 10px;
             line-height: 28px;
             display: flex;
             display: -ms-flexbox;
             font-size: 16px;
             -ms-flex-align: center !important;
             align-items: center !important;
+            padding-left: 12px;
+            padding-right: 12px;
+            padding-top: 0px;
+            padding-bottom: 0px;
 
             span {
               font-weight: 200;
@@ -2524,9 +2558,9 @@
         .theme-btn {
           width: 100%;
           border-radius: 50px;
-          background: var(--color-white);
-          color: var(--heading-dark);
-          border-color: var(--color-white);
+          background: var(--primary-color-one);
+          color: var(--color-white);
+          // border-color: var(--color-white);
           box-shadow: 0px 5px 22px 0px rgba(0, 0, 0, 0.06);
 
           span {
@@ -2537,44 +2571,48 @@
         }
       }
 
-      &:hover {
-        &:before {
-          width: calc(100% + 60px);
-          left: -30px;
-        }
+      // &:hover {
+      //   &:before {
+      //     width: calc(100% + 60px);
+      //     left: -30px;
+      //   }
 
-        p {
-          color: var(--text-color-light);
-        }
+      //   p {
+      //     color: var(--text-color-light);
+      //   }
 
-        h2 {
-          color: var(--color-white);
-        }
+      //   h2 {
+      //     color: var(--color-white);
+      //   }
 
-        h6 {
-          color: var(--text-color-light);
+      //   h6 {
+      //     color: var(--text-color-light);
 
-          small {
-            color: var(--color-white);
-          }
-        }
+      //     small {
+      //       color: var(--color-white);
+      //     }
+      //   }
 
-        .upper_content {
-          border-bottom: 1px dashed var(--border-color-dark-two);
-        }
+      //   .upper_content {
+      //     border-bottom: 1px dashed rgba(218, 218, 218, 0.3);
+      //   }
 
-        .lower_content {
-          ul {
-            li {
-              color: var(--text-color-light);
+      //   .lower_content {
+      //     ul {
+      //       li {
+      //         color: var(--text-color-light);
+      //         p {
+      //           color: white;
+      //         }
+      //       }
 
-              span {
-                color: white;
-              }
-            }
-          }
-        }
-      }
+      //       .price_list_item_dd {
+      //         border-bottom: 1px dashed rgba(218, 218, 218, 0.3);
+      //         // background-color: rgb(131, 131, 131);
+      //       }
+      //     }
+      //   }
+      // }
     }
   }
 }

@@ -16,19 +16,33 @@ import "../public/assets/css/woocommerce-layout.css"
 import "../public/assets/css/woocommerce.css"
 import "../public/assets/css/floating-circle-menu.css"
 
-function MyApp({ Component, pageProps }) {
+// TRANSLATION
+// import '@/i18n/config'
+import { useRouter } from 'next/router';
+import { NextIntlClientProvider } from 'next-intl';
 
+function MyApp({ Component, pageProps }) {
+    console.log("Page Props: ", pageProps);
     const [loading, setLoading] = useState(true)
     useEffect(() => {
         setTimeout(() => {
             setLoading(false)
         }, 1000)
     }, [])
+
+    const router = useRouter();
+
     return (
         <>
             <title>Creote - Corporate & Consulting Business NextJS Template</title>
             {!loading ? (
-                <Component {...pageProps} />
+                <NextIntlClientProvider
+                    locale={router.locale}
+                    messages={pageProps.messages}
+                    timeZone="Europe/Vienna"
+                >
+                    <Component {...pageProps} />
+                </NextIntlClientProvider>
             ) : (
                 <Preloader />
             )}
