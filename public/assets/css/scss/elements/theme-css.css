@@ -19445,6 +19445,7 @@ header .flaticon-list {
   font-weight: 600;
   line-height: 26px;
   z-index: 2;
+  min-height: 127px;
   cursor: pointer;
 }
 .faq_section.type_two .faq_header span {
@@ -23895,7 +23896,7 @@ form .wpcf7-response-output {
   padding-left: 4px;
 }
 .icon_box_new_box.type_two {
-  min-height: 470px;
+  min-height: 280px;
   position: relative;
   padding: 60px 40px 0px 40px;
   background: var(--color-white);
@@ -23960,6 +23961,7 @@ form .wpcf7-response-output {
   position: relative;
   z-index: 10;
   margin-bottom: 10px;
+  padding-bottom: 20px;
 }
 .icon_box_new_box.type_two .content h2 a {
   font-size: 20px;
@@ -30439,7 +30441,15 @@ body.side_menu_toggled .style-switcher {
 
 /*------===============-responsive scs-==============------*/
 /*---slider---cs----*/
+@media (min-width: 1200px) {
+  .banner_intro_dd {
+    padding-left: 100px;
+  }
+}
 @media (max-width: 1199px) {
+  .banner_intro_dd {
+    padding-left: 100px;
+  }
   .mini_cart_togglers.fixed_cart {
     top: unset;
     bottom: 40px;
@@ -30770,6 +30780,10 @@ body.side_menu_toggled .style-switcher {
   }
 }
 @media (max-width: 768px) {
+  .banner_intro_dd {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .team_intro_box_container {
     display: flex;
     justify-content: space-evenly;
@@ -31214,6 +31228,10 @@ body.side_menu_toggled .style-switcher {
   }
 }
 @media (max-width: 550px) {
+  .banner_intro_dd {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .process_box.style_two .process_box_outer_two .content_box .icon {
     float: unset;
     margin-bottom: 15px;

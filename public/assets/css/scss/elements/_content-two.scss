@@ -1559,7 +1559,7 @@
   }
 
   &.type_two {
-    min-height: 470px;
+    min-height: 280px;
     position: relative;
     padding: 60px 40px 0px 40px;
     background: var(--color-white);
@@ -1636,7 +1636,7 @@
       position: relative;
       z-index: 10;
       margin-bottom: 10px;
-
+      padding-bottom: 20px;
       h2 a {
         font-size: 20px;
         display: block;

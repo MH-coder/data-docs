@@ -1,5 +1,9 @@
 import Link from "next/link"
+import { useTranslations } from 'next-intl';
+
 export default function Feature() {
+    const t = useTranslations();
+
     return (
         <>
             <section className="feature-section bg_dark_2" style={{ position: "relative" }}>
@@ -34,12 +38,12 @@ export default function Feature() {
                             <div className="title_all_box style_seven text-center dark_color">
                                 <div className="title_sections">
                                     <div className="before_title color_white">
-                                        THE PLACE TO BE
+                                        {t("The place to be")}
                                     </div>
-                                    <div className="small_text_sub color_white">THE PLACE TO BE</div>
-                                    <div className="title color_white">Why Dubai?l</div>
+                                    <div className="small_text_sub color_white">{t("The place to be")}</div>
+                                    <div className="title color_white">{t("Why choose Dubai?")}</div>
                                     <p className="description_text color_white">
-                                        Over the past 5 years, over 500,000 ambitious people from all over the world have left their homeland and emigrated to Dubai. This is due, among other things, to the high quality of life, excellent tax policy and the emerging economy of Dubai and the United Arab Emirates.
+                                        {t("Moving to Dubai offers a unique opportunity to experience a vibrant mix of culture, modernity and business opportunities With a strategic location connecting the East and the West, Dubai is a gateway to international trade The city boasts state-of-the-art infrastructure, friendly business policies and special economic zones that encourage entrepreneurship The mild climate, high living standards and a welcoming global community help create an ideal environment for ambitious professionals With growing economic diversification and innovative projects, Dubai offers unrivaled career and lifestyle opportunities")}
                                     </p>
                                 </div>
                                 {/*===============spacing==============*/}
@@ -58,9 +62,9 @@ export default function Feature() {
                                 </div>
                                 <div className="content">
                                     <h2>
-                                        <Link href="#">Opportunity</Link>
+                                        <Link href="#">{t("Opportunity")}</Link>
                                     </h2>
-                                    <p>Unlike Europe, the United Arab Emirates and Dubai are experiencing tremendous economic growth.</p>
+                                    <p>{t("Dubai offers fertile ground for business opportunities, thanks to favorable policies, advanced infrastructure and economic diversification The various special economic zones encourage entrepreneurial growth")}</p>
                                     {/* <Link href="#" className="read_more type_two">
                                         Read More <span className="icon-arrow-right" />
                                     </Link > */}
@@ -76,9 +80,9 @@ export default function Feature() {
                                 </div>
                                 <div className="content">
                                     <h2>
-                                        <Link href="#">Safety</Link>
+                                        <Link href="#">{t("Safety")}</Link>
                                     </h2>
-                                    <p>The United Arab Emirates is one of the safest countries and Dubai is one of the safest cities in the world.</p>
+                                    <p>{t("Dubai is renowned for its outstanding urban safety, offering a peaceful and secure environment Robust security measures help ensure the well-being of residents and visitors")}</p>
                                     {/* <Link href="#" className="read_more type_two">
                                         Read More <span className="icon-arrow-right" />
                                     </Link > */}
@@ -94,9 +98,9 @@ export default function Feature() {
                                 </div>
                                 <div className="content">
                                     <h2>
-                                        <Link href="#">Position</Link>
+                                        <Link href="#">{t("Strategic position")}</Link>
                                     </h2>
-                                    <p>Strategically located, Dubai is a hub between Europe, Africa and Asia.</p>
+                                    <p>{t("Dubai is located in a key geographical location, making it a bridge between Europe and Asia This location facilitates international trade and offers business opportunities in a central location")}</p>
                                     {/* <Link href="#" className="read_more type_two">
                                         Read More <span className="icon-arrow-right" />
                                     </Link > */}

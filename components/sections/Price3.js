@@ -11,6 +11,7 @@ import { GoIssueClosed } from "react-icons/go";
 import { SlClose } from "react-icons/sl";
 import { IoCloseCircle } from "react-icons/io5";
 import { FaCircleCheck, FaCircleXmark } from "react-icons/fa6";
+import { useTranslations } from 'next-intl';
 
 
 export default function Price3() {
@@ -18,6 +19,7 @@ export default function Price3() {
     const [packages, setPackages] = useState([]);
     const [isContactPopup, setContactPopup] = useState(false)
     const handleContactPopup = () => setContactPopup(false)
+    const t = useTranslations();
 
     const handleOnClick2 = (index) => {
         setActiveIndex2(index);
@@ -55,14 +57,14 @@ export default function Price3() {
                 {/*===============spacing==============*/}
                 <div className="padding_dd">
                     <div className="row align-items-end">
-                        <div className="col-lg-6 col-md-12">
+                        <div className="col-lg-8 col-md-12">
                             <div className="title_all_box style_six dark_color">
                                 <div className="title_sections">
                                     <div className="before_title">
                                         <span className="icon-briefcase icon" />
-                                        CHOOSE YOUR PLAN
+                                        {t("Our Exclusive Packages")}
                                     </div>
-                                    <div className="title">Adaptable Pricing</div>
+                                    <div className="" style={{ width: "100%" }}>{t("The prices indicated below always include the assistance of a professional who will guide you in choosing the best solution to form your company in Dubai")}</div>
                                 </div>
                             </div>
                         </div>
