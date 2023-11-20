@@ -29,7 +29,7 @@ export default function Process2() {
                         </div>
                     </div>
                     <div className="row align-items-center">
-                        <div className="col-lg-4 col-md-12 col-sm-12 mb-sm-5 mb-md-5 mb-lg-0 mb-xl-0">
+                        <div style={{ minHeight: "775px" }} className="col-lg-4 col-md-12 col-sm-12 mb-sm-5 mb-md-5 mb-lg-0 mb-xl-0">
                             <div className="process_box style_three dark_color">
                                 <div className="process_box_outer_three left">
                                     <div className="icon">
@@ -80,7 +80,7 @@ export default function Process2() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-12 col-sm-12">
+                        <div style={{ minHeight: "775px" }} className="col-lg-4 col-md-12 col-sm-12">
                             <div className="process_box style_three dark_color">
                                 <div className="process_box_outer_three right">
                                     <div className="icon">

@@ -7,6 +7,13 @@
   }
 }
 @media (max-width: 1199px) {
+  .header_logo_box {
+    .logo {
+      .logo_default {
+        max-height: 160px !important;
+      }
+    }
+  }
   .banner_intro_dd {
     padding-left: 100px;
   }
@@ -171,6 +178,16 @@
 }
 
 @media (max-width: 992px) {
+  .owl_new_one .swiper.owl_nav_block .owl-nav {
+    display: none !important;
+  }
+  .header_logo_box {
+    .logo {
+      .logo_default {
+        max-height: 140px !important;
+      }
+    }
+  }
   .not_for_mobile_cart {
     display: none;
   }
@@ -384,6 +401,10 @@
 }
 
 @media (max-width: 768px) {
+  .padding_dd {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .banner_intro_dd {
     padding-left: 20px;
     padding-right: 20px;
@@ -435,7 +456,7 @@
   .crt_mobile_menu
     .menu-box
     .menu-outer
-    ul.navbar_nav
+    // ul.navbar_nav
     li.dropdown.mega_menu
     .dropdown-menu
     .m_column {
@@ -863,6 +884,22 @@
   .banner_intro_dd {
     padding-left: 20px;
     padding-right: 20px;
+
+    .title_dd {
+      h1 {
+        font-size: 22px !important;
+      }
+      h5 {
+        font-size: small;
+      }
+      .list_items_container_dd {
+        .list_item_dd {
+          p {
+            font-size: 8px !important;
+          }
+        }
+      }
+    }
   }
   .process_box.style_two .process_box_outer_two .content_box .icon {
     float: unset;
@@ -1178,10 +1215,16 @@
 }
 
 @media (max-width: 550px) {
+  .banner_section_hm_16 {
+    .inner_section {
+      background-size: 320% !important;
+      background-position: center -150px;
+    }
+  }
   .crt_mobile_menu
     .menu-box
     .menu-outer
-    ul.navbar_nav
+    // ul.navbar_nav
     li.dropdown.mega_menu
     .dropdown-menu
     .m_column {
@@ -1290,6 +1333,12 @@
 }
 
 @media screen and (max-width: 426px) {
+  .banner_section_hm_16 {
+    .inner_section {
+      background-size: 500% !important;
+      background-position: center -150px;
+    }
+  }
   .team_intro_box_container {
     flex-direction: column;
 
@@ -1304,6 +1353,15 @@
   .banner_container {
     .left_content {
       padding-bottom: 30px !important ;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .banner_section_hm_16 {
+    .inner_section {
+      background-size: 500% !important;
+      background-position: center -70px;
     }
   }
 }

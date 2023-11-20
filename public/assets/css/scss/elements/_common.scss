@@ -1126,6 +1126,7 @@
   }
   &.style_three {
     .process_box_outer_three {
+      min-height: 330px;
       &.right {
         text-align: right;
       }
@@ -6344,6 +6345,10 @@
 ----==============social_media_v_one========================--
 --======================================================--*/
 .social_media_v_one {
+  @media screen and (max-width: 768px) {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
   position: relative;
   ul {
     padding: 0;

@@ -1,4 +1,65 @@
 /*------===============-css-start-==============------*/
+// LANGUAGE DROPDOWN
+.language_dropdown_dd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+
+  position: relative;
+
+  border-radius: 100%;
+  border: none;
+
+  .language_items_dd {
+    position: absolute;
+    top: 45px;
+    right: 0px;
+    padding: 0px 0px;
+    overflow: hidden;
+
+    width: 140px;
+    height: fit-content;
+    background: var(--primary-color-three);
+
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .language_item_dd {
+      transition: all 0.2s ease-in;
+      display: flex;
+      align-items: center;
+
+      width: 100%;
+      padding: 5px 0px;
+
+      border-bottom: 1px solid #969696;
+
+      &:last-child {
+        border: none;
+      }
+
+      &:hover {
+        background: #5e2264e0;
+        color: white;
+        cursor: pointer;
+      }
+
+      img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        margin-left: 16px;
+      }
+    }
+  }
+}
+
 // BANNER
 .team_intro_box_container {
   display: flex;
@@ -83,7 +144,8 @@
 .header_socails_dd {
   display: flex;
   align-items: center;
-
+  justify-content: center;
+  width: 100%;
   .social_dd {
     padding: 5px;
     border: none;
@@ -157,6 +219,10 @@
     rgba(94, 34, 100, 0.8) 0%,
     rgba(255, 255, 255, 0) 80%
   );
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
 }
 
 body {
@@ -1529,7 +1595,7 @@ body.error404 {
     }
 
     li {
-      transform: rotate(calc(360deg / 8 * var(--i)));
+      transform: rotate(calc(360deg / 10 * var(--i)));
     }
   }
 
@@ -1588,7 +1654,7 @@ body.error404 {
       height: 40px;
       background: var(--primary-color-one);
       border-radius: 50%;
-      transform: rotate(calc(360deg / -8 * var(--i)));
+      transform: rotate(calc(360deg / -10 * var(--i)));
       color: white;
     }
   }

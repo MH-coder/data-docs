@@ -40,14 +40,14 @@ export default function Contact9() {
                             <div className="pd_bottom_35" />
                             {/*===============spacing==============*/}
                             <div className="row gutter_25px">
-                                <div className="col-lg-4 col-md-12">
+                                <div className="col-4 col-lg-4">
                                     <div className="theme_btn_all color_one">
                                         <button className="theme-btn one" onClick={() => setContactPopup(true)}>
-                                            Contact us
+                                            Contact
                                         </button>
                                     </div>
                                 </div>
-                                <div className="col-lg-8 col-md-12">
+                                <div className="col-8 col-lg-8">
                                     <div className="footer_contact_list dark_color type_one">
                                         <div className="same_contact phone">
                                             <span className="icon-telephone" />

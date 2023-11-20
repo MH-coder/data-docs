@@ -11,10 +11,10 @@ export default function Testimonial10() {
         loop: true,
 
         // Navigation
-        // navigation: {
-        //     nextEl: '.t10n',
-        //     prevEl: '.t10p',
-        // },
+        navigation: {
+            nextEl: '.t10n',
+            prevEl: '.t10p',
+        },
 
         // Pagination
         pagination: {
@@ -27,11 +27,11 @@ export default function Testimonial10() {
                 spaceBetween: 30,
             },
             575: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 30,
             },
             767: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 30,
             },
             991: {

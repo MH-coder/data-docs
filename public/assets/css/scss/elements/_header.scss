@@ -254,8 +254,9 @@
     position: relative;
     img {
       display: block;
-      width: 170px;
-      height: auto;
+      width: 100% !important;
+      max-height: 220px;
+      object-fit: contain;
       margin-bottom: 0px;
     }
     .logo_default {

@@ -29,8 +29,11 @@ export default function Banner4() {
     return (
         <>
             <div className="banner_section_hm_16 pd_left_100 pd_right_100 md_pd_left_15 md_pd_right_15">
-                <div className="inner_section bg_op_1" style={{ background: 'url(/assets/images/business-background-8.jpg)', backgroundPosition: "center 25%", position: "relative", }}>
-                    <div className="mainHeaderGradient" style={{ position: 'absolute', width: "100%", height: "100%", borderRadius: "30px", }}></div>
+                {/* INNER SECTION */}
+                <div className="inner_section bg_op_1">
+                    {/* GRADIENT */}
+                    <div className="mainHeaderGradient"></div>
+                    {/* CONTAINER */}
                     <div className="default-container">
                         <div className="row gutter_30px">
                             <div className="col-lg-12 pd_zero">
@@ -49,7 +52,7 @@ export default function Banner4() {
                                                     {
                                                         list_points.map((point, index) => {
                                                             return <div key={index} className="list_item_dd">
-                                                                <i className=" icon-checked" />
+                                                                <i className=" icon-checked check_icon_dd" />
                                                                 <p>{t(point)}</p>
                                                             </div>
                                                         })

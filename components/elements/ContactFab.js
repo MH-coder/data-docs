@@ -37,6 +37,9 @@ export default function ContactFab() {
                 <li style={{ "--i": 2 }}>
                     <a href="#"><span className="fa fa-phone"></span></a>
                 </li>
+                <li style={{ "--i": 3 }}>
+                    <a href="#"><span className="fa  fa-envelope-o"></span></a>
+                </li>
             </div>
         </>
     )

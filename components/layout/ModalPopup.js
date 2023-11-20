@@ -137,11 +137,12 @@ export default function ModalPopup({ isContactPopup, handleContactPopup }) {
             method: ApiEndpoints.GET_SERVICES_LIST.method,
             url: ApiEndpoints.GET_SERVICES_LIST.url
         })
-
+        console.log("resss: ", res.data.data);
         // SET SERVICES LIST
         if (res?.data?.success) {
             // formik.setFieldValue("services", res.data.data)
-            setServicesOptions(res.data.data.map((option) => {
+
+            setServicesOptions(res?.data?.data?.map((option) => {
                 return {
                     value: option?._id,
                     label: option?.name

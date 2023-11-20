@@ -78,7 +78,7 @@ export default function Project10() {
                                     </div>
                                     <div className="title">{t("Process of setting up your company in dubai")}</div>
                                     <div className="description_text">
-                                        {t("Below you will find the explanation of the 6 simple steps that will allow you to start your business in Dubai with our supportBelow you will find the explanation of the 6 simple steps that will allow you to start your business in Dubai with our support")}
+                                        {t("Below you will find the explanation of the 6 simple steps that will allow you to start your business in Dubai with our support")}
                                     </div>
                                 </div>
                             </div>
@@ -93,7 +93,7 @@ export default function Project10() {
                         {
                             companyFormationSteps.map((step) => {
                                 return <div className="col-12 col-sm-6 col-lg-4 px-3">
-                                    <div className="service_box type_one" style={{ minHeight: "560px" }}>
+                                    <div className="service_box type_one">
                                         <div className="image_box_projects pt-3">
                                             <img src={step.backgroundImage} className="img-fluid" alt="img" />
                                             <div className="overlay" />
